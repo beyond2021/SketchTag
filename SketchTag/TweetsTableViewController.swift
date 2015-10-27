@@ -23,7 +23,7 @@ class TweetsTableViewController: UITableViewController {
 //    let radius = CLLocationDistance(10)
     
     //LETS MAKE IT SEARCH FOR SOME SEARCH TEXT
-    var searchText : String? = "#stanford" {
+    var searchText : String? =  "stanford" {
         //When this is set I need to do a new search
         didSet{
             searchTextField?.text = searchText
@@ -40,8 +40,15 @@ class TweetsTableViewController: UITableViewController {
     }
     
     
+    @IBAction func refeshStream(sender: AnyObject) {
+        refresh()
+    }
     
-
+    
+    @IBAction func backToSearch(sender: AnyObject) {
+        tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = searchText
@@ -49,7 +56,7 @@ class TweetsTableViewController: UITableViewController {
         
           }
     
-    
+   
     func setTableViewHeight(){
         
         tableView.estimatedRowHeight = tableView.rowHeight
@@ -73,7 +80,10 @@ class TweetsTableViewController: UITableViewController {
             //        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             //        let region = CLCircularRegion(center: center, radius: radius, identifier: "NYC")
             //  let request = TwitterRequest(search: "#sexy", count: 100, .Mixed, region)
-            let request = TwitterRequest(search: searchText!, count: 100)
+            
+            let realSearchText = "#" + searchText!
+            
+            let request = TwitterRequest(search: realSearchText, count: 100)
             
             
             request.fetchTweets  { (newTweets) -> Void in
@@ -215,6 +225,7 @@ extension TweetsTableViewController: UITextFieldDelegate
         if textField == searchTextField{
             textField.resignFirstResponder()//dismiss the keyboard
             searchText = textField.text
+            self.title = searchText
             
             
         }
