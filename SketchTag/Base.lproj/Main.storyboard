@@ -22,11 +22,11 @@
                             <textInputTraits key="textInputTraits" keyboardType="twitter"/>
                         </textField>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweeT" rowHeight="162" id="6su-9z-URX" customClass="TweetTableViewCell" customModule="SketchTag" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="122" width="600" height="162"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweeT" rowHeight="181" id="6su-9z-URX" customClass="TweetTableViewCell" customModule="SketchTag" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="122" width="600" height="181"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6su-9z-URX" id="QBf-jU-zgz">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="161"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXS-oZ-fIc">
@@ -44,52 +44,45 @@
                                                 <constraint firstAttribute="width" constant="48" id="ZAj-uH-PUF"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyP-3a-UkD">
-                                            <rect key="frame" x="64" y="36" width="528" height="118"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-PS-EZN">
-                                            <rect key="frame" x="8" y="64" width="48" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-PS-EZN">
+                                            <rect key="frame" x="8" y="64" width="48" height="15"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="48" id="N6Q-Je-fw0"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8eU-xG-C4d">
+                                            <rect key="frame" x="64" y="27" width="528" height="134"/>
+                                            <animations/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="twitter" returnKeyType="search"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                        </textView>
                                     </subviews>
                                     <animations/>
                                     <constraints>
                                         <constraint firstAttribute="topMargin" secondItem="ghC-GB-5O0" secondAttribute="top" id="0gW-Iu-T8l"/>
-                                        <constraint firstItem="AyP-3a-UkD" firstAttribute="leading" secondItem="HXS-oZ-fIc" secondAttribute="leading" id="2jF-rH-7YV"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="AyP-3a-UkD" secondAttribute="bottom" constant="-1" id="3k2-RG-bU2"/>
+                                        <constraint firstItem="8eU-xG-C4d" firstAttribute="leading" secondItem="HXS-oZ-fIc" secondAttribute="leading" id="14I-P3-XRv"/>
                                         <constraint firstItem="9yV-PS-EZN" firstAttribute="top" secondItem="ghC-GB-5O0" secondAttribute="bottom" constant="8" symbolic="YES" id="53T-PB-Afy"/>
-                                        <constraint firstItem="AyP-3a-UkD" firstAttribute="top" secondItem="HXS-oZ-fIc" secondAttribute="bottom" constant="8" id="A1O-U3-TvA"/>
-                                        <constraint firstItem="AyP-3a-UkD" firstAttribute="leading" secondItem="9yV-PS-EZN" secondAttribute="trailing" constant="8" symbolic="YES" id="CDZ-Yc-8NM"/>
-                                        <constraint firstItem="AyP-3a-UkD" firstAttribute="trailing" secondItem="HXS-oZ-fIc" secondAttribute="trailing" id="SkI-tn-L9k"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="8eU-xG-C4d" secondAttribute="bottom" constant="-8" id="BQp-9J-lpF"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8eU-xG-C4d" secondAttribute="trailing" id="a7t-QR-iPg"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="9yV-PS-EZN" secondAttribute="leading" id="fQ9-s7-GWN"/>
                                         <constraint firstItem="HXS-oZ-fIc" firstAttribute="leading" secondItem="ghC-GB-5O0" secondAttribute="trailing" constant="8" id="gYo-nh-nYb"/>
+                                        <constraint firstItem="8eU-xG-C4d" firstAttribute="top" secondItem="HXS-oZ-fIc" secondAttribute="bottom" constant="-1" id="hLI-tf-q9K"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="ghC-GB-5O0" secondAttribute="leading" id="hkC-kc-nHk"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="HXS-oZ-fIc" secondAttribute="trailing" id="iVh-ZM-GXM"/>
                                         <constraint firstAttribute="topMargin" secondItem="HXS-oZ-fIc" secondAttribute="top" id="kpD-Ei-5Vh"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="AyP-3a-UkD" secondAttribute="trailing" id="neA-Bf-uvB"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="2jF-rH-7YV"/>
-                                            <exclude reference="SkI-tn-L9k"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
                                     <outlet property="tweetProfileImageView" destination="ghC-GB-5O0" id="iuO-T8-o17"/>
                                     <outlet property="tweetScreenNameLabel" destination="HXS-oZ-fIc" id="s2e-aG-NPX"/>
-                                    <outlet property="tweetTextLabel" destination="AyP-3a-UkD" id="8Lh-n2-Jx2"/>
+                                    <outlet property="tweetTextView" destination="8eU-xG-C4d" id="QBw-Ia-QDO"/>
                                     <outlet property="tweetTimeLabel" destination="9yV-PS-EZN" id="vHp-iZ-ECO"/>
                                 </connections>
                             </tableViewCell>

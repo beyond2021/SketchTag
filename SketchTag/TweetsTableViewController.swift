@@ -31,7 +31,8 @@ class TweetsTableViewController: UITableViewController {
             // Clear out my table
             tweets.removeAll()
             tableView.reloadData()
-            refresh()
+                                    refresh()
+            setTableViewHeight()
             
             
         }
@@ -43,9 +44,26 @@ class TweetsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        refresh()
+        self.title = searchText
+               refresh()
         
           }
+    
+    
+    func setTableViewHeight(){
+        
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
+    }
+    
+    
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
+    }
     
     func refresh(){
         
@@ -73,6 +91,7 @@ class TweetsTableViewController: UITableViewController {
                         //Next I reload my tableView.
                         // NB I should just reload this one section, but for demo purposes I am reloading the whole tableview here
                         self.tableView.reloadData()
+                      //  self.setTableViewHeight()
                         
                     }
                     
@@ -201,5 +220,11 @@ extension TweetsTableViewController: UITextFieldDelegate
         }
         return true
     }
+    
+}
+
+extension TweetsTableViewController : UITextViewDelegate {
+    
+    
     
 }

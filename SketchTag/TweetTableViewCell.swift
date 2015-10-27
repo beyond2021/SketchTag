@@ -25,6 +25,7 @@ class TweetTableViewCell: UITableViewCell {
     @IBOutlet weak var tweetScreenNameLabel: UILabel!
     @IBOutlet weak var tweetTextLabel: UILabel!
     
+    @IBOutlet weak var tweetTextView: UITextView!
     
     func updateUI(){
         
@@ -33,19 +34,31 @@ class TweetTableViewCell: UITableViewCell {
         tweetScreenNameLabel.attributedText = nil
         tweetTimeLabel.attributedText = nil
         tweetProfileImageView.image = nil
+        tweetTextView.attributedText = nil
         
         //Load new info from our tweet (If Any)
         if let tweet = self . tweet
         {
-            tweetTextLabel?.text = tweet.text
-            if tweetTextLabel?.text != nil {
+//            tweetTextLabel?.text = tweet.text
+//            if tweetTextLabel?.text != nil {
+//                for _ in tweet.media {
+//                    tweetTextLabel.text! += " 📷"
+            
+ //               }
+        
+        
+          //  }
+            
+            tweetTextView?.text = tweet.text
+            if tweetTextView?.text != nil{
                 for _ in tweet.media {
-                    tweetTextLabel.text! += " 📷"
-                    
+                    tweetTextView.text! += " 📷"                    
                 }
-        
-        
+                
+                
             }
+            
+            
        tweetScreenNameLabel?.text = "\(tweet.user)" //Twwet.user.desceiption
             if let profileImageURL = tweet.user.profileImageURL
             {
