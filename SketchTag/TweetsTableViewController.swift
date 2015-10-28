@@ -24,8 +24,13 @@ class TweetsTableViewController: UITableViewController {
     
     //LETS MAKE IT SEARCH FOR SOME SEARCH TEXT
     var searchText : String? =  "stanford" {
+        
+        
         //When this is set I need to do a new search
         didSet{
+            //everytime serch changes
+            lastSuccessfulRequest == nil
+            
             searchTextField?.text = searchText
             
             // Clear out my table
@@ -39,6 +44,64 @@ class TweetsTableViewController: UITableViewController {
         
     }
     
+    
+    var lastSuccessfulRequest : TwitterRequest?
+    
+    
+    var nextRequestToAttempt : TwitterRequest? {
+        if lastSuccessfulRequest == nil{
+           //Lets make one
+            if searchText != nil{
+                let realSearchText = "#" + searchText!
+                return TwitterRequest(search: realSearchText, count: 100)
+            } else{
+                return nil
+                
+            }
+            
+        } else {
+            
+          return  lastSuccessfulRequest!.requestForNewer
+        }
+       // return nil
+    }
+    
+    
+    
+    @IBAction func refresh(sender: UIRefreshControl?) {
+        if searchText != nil {
+            
+            if   let request = nextRequestToAttempt {
+                
+                request.fetchTweets  { (newTweets) -> Void in
+                    // NOTE THIS CLOUSURE IS NOT ON THE MAIN QUEUE SO NO UI STUFF UNLESS U GET BACK THERE. BECAUSE FETCH TWEETS IS AN ASYNCRONOUS API. MULTIYHTRADE API
+                    //Do whatever I want in here with my new tweets
+                    //if they are any
+                    
+                    // LETS GET BACK ON THE MAIN QUEUE
+                    dispatch_async(dispatch_get_main_queue()){ () -> Void in
+                        // NOW WE ARE BACK ON THE MAIN QUEUE
+                        
+                        if newTweets.count > 0 {
+                            self.tweets.insert(newTweets, atIndex: 0) //HERE WE LOAD UP OUR MODEL
+                            //This is in section 0. No proplem for capturing self in this case
+                            //Next I reload my tableView.
+                            // NB I should just reload this one section, but for demo purposes I am reloading the whole tableview here
+                            self.tableView.reloadData()
+                           sender?.endRefreshing()
+                            
+                        }
+                        
+                    }
+                }
+                
+            }
+        } else{
+        
+sender?.endRefreshing()
+        }
+        
+    }
     
     @IBAction func refeshStream(sender: AnyObject) {
         tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top)
@@ -76,43 +139,10 @@ class TweetsTableViewController: UITableViewController {
     }
     
     func refresh(){
-        
-        if searchText != nil {
-            //Lets make a request
-            
-            //        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-            //        let region = CLCircularRegion(center: center, radius: radius, identifier: "NYC")
-            //  let request = TwitterRequest(search: "#sexy", count: 100, .Mixed, region)
-            
-            let realSearchText = "#" + searchText!
-            
-            let request = TwitterRequest(search: realSearchText, count: 100)
-            
-            
-            request.fetchTweets  { (newTweets) -> Void in
-                // NOTE THIS CLOUSURE IS NOT ON THE MAIN QUEUE SO NO UI STUFF UNLESS U GET BACK THERE. BECAUSE FETCH TWEETS IS AN ASYNCRONOUS API. MULTIYHTRADE API
-                //Do whatever I want in here with my new tweets
-                //if they are any
-                
-                // LETS GET BACK ON THE MAIN QUEUE
-                dispatch_async(dispatch_get_main_queue()){ () -> Void in
-                    // NOW WE ARE BACK ON THE MAIN QUEUE
-                    
-                    if newTweets.count > 0 {
-                        self.tweets.insert(newTweets, atIndex: 0) //HERE WE LOAD UP OUR MODEL
-                        //This is in section 0. No proplem for capturing self in this case
-                        //Next I reload my tableView.
-                        // NB I should just reload this one section, but for demo purposes I am reloading the whole tableview here
-                        self.tableView.reloadData()
-                      //  self.setTableViewHeight()
-                        
+        if refreshControl != nil { // someone is calling refresh before my outlets are set. Start my spinner
+            refreshControl?.beginRefreshing()
                     }
-                    
-                }
-            }
-        }
- 
-        
+        refresh(refreshControl)
         
     }
     
