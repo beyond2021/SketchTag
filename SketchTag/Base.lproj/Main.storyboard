@@ -93,12 +93,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="aVL-d0-ROq">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="QJQ-Ob-GAi">
+                        <barButtonItem key="leftBarButtonItem" title="🐤" id="QJQ-Ob-GAi">
                             <connections>
                                 <action selector="refeshStream:" destination="acx-KZ-iEv" id="NKu-u1-Ouf"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="qPL-mW-Yf1">
+                        <barButtonItem key="rightBarButtonItem" title="🔍" id="qPL-mW-Yf1">
                             <connections>
                                 <action selector="backToSearch:" destination="acx-KZ-iEv" id="URu-2R-5dz"/>
                             </connections>

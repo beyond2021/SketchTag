@@ -32,7 +32,7 @@ class TweetsTableViewController: UITableViewController {
             tweets.removeAll()
             tableView.reloadData()
                                     refresh()
-            setTableViewHeight()
+           
             
             
         }
@@ -41,6 +41,7 @@ class TweetsTableViewController: UITableViewController {
     
     
     @IBAction func refeshStream(sender: AnyObject) {
+        tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top)
         refresh()
     }
     
@@ -51,7 +52,9 @@ class TweetsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = searchText
+       //// tableView.hidden = true
+        self.title = searchText!.capitalizedString
+        setTableViewHeight()
                refresh()
         
           }
@@ -215,18 +218,31 @@ class TweetsTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    /Users/keevinmitchell/Desktop/SketchTag/SketchTag/TweetsTableViewController.swift:227:44: Extraneous '_' in parameter: 'textField' has no keyword argument name
+    
     */
 
 }
 
 extension TweetsTableViewController: UITextFieldDelegate
+    
+
 {
+     func textFieldDidBeginEditing(textField: UITextField){
+        
+         if textField == searchTextField{
+        
+        }
+        
+    }
+    
+    
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField == searchTextField{
             textField.resignFirstResponder()//dismiss the keyboard
             searchText = textField.text
-            self.title = searchText
-            
+            self.title = searchText!.capitalizedString
             
         }
         return true
