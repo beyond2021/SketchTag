@@ -23,13 +23,13 @@ class TweetsTableViewController: UITableViewController {
 //    let radius = CLLocationDistance(10)
     
     //LETS MAKE IT SEARCH FOR SOME SEARCH TEXT
-    var searchText : String? =  "stanford" {
+    var searchText : String? =  "newyorkcity" {
         
         
         //When this is set I need to do a new search
         didSet{
             //everytime serch changes
-            lastSuccessfulRequest == nil
+           lastSuccessfulRequest = nil
             
             searchTextField?.text = searchText
             

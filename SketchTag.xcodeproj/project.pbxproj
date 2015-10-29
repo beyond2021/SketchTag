@@ -14,22 +14,22 @@
 		227839501BDA923B00C4FC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2278394E1BDA923B00C4FC5D /* LaunchScreen.storyboard */; };
 		2278395B1BDA924100C4FC5D /* SketchTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278395A1BDA924100C4FC5D /* SketchTagTests.swift */; };
 		227839661BDA924200C4FC5D /* SketchTagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839651BDA924200C4FC5D /* SketchTagUITests.swift */; };
-		227839741BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		227839751BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		227839761BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2278397C1BDA95EF00C4FC5D /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839781BDA95EF00C4FC5D /* MediaItem.swift */; settings = {ASSET_TAGS = (); }; };
-		2278397D1BDA95EF00C4FC5D /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839781BDA95EF00C4FC5D /* MediaItem.swift */; settings = {ASSET_TAGS = (); }; };
-		2278397E1BDA95EF00C4FC5D /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839781BDA95EF00C4FC5D /* MediaItem.swift */; settings = {ASSET_TAGS = (); }; };
-		2278397F1BDA95EF00C4FC5D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839791BDA95EF00C4FC5D /* Tweet.swift */; settings = {ASSET_TAGS = (); }; };
-		227839801BDA95EF00C4FC5D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839791BDA95EF00C4FC5D /* Tweet.swift */; settings = {ASSET_TAGS = (); }; };
-		227839811BDA95EF00C4FC5D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839791BDA95EF00C4FC5D /* Tweet.swift */; settings = {ASSET_TAGS = (); }; };
-		227839821BDA95EF00C4FC5D /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397A1BDA95EF00C4FC5D /* TwitterRequest.swift */; settings = {ASSET_TAGS = (); }; };
-		227839831BDA95EF00C4FC5D /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397A1BDA95EF00C4FC5D /* TwitterRequest.swift */; settings = {ASSET_TAGS = (); }; };
-		227839841BDA95EF00C4FC5D /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397A1BDA95EF00C4FC5D /* TwitterRequest.swift */; settings = {ASSET_TAGS = (); }; };
-		227839851BDA95EF00C4FC5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397B1BDA95EF00C4FC5D /* User.swift */; settings = {ASSET_TAGS = (); }; };
-		227839861BDA95EF00C4FC5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397B1BDA95EF00C4FC5D /* User.swift */; settings = {ASSET_TAGS = (); }; };
-		227839871BDA95EF00C4FC5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397B1BDA95EF00C4FC5D /* User.swift */; settings = {ASSET_TAGS = (); }; };
-		22811F601BDF740F00061FED /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22811F5F1BDF740F00061FED /* TweetTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		227839741BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */; };
+		227839751BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */; };
+		227839761BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */; };
+		2278397C1BDA95EF00C4FC5D /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839781BDA95EF00C4FC5D /* MediaItem.swift */; };
+		2278397D1BDA95EF00C4FC5D /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839781BDA95EF00C4FC5D /* MediaItem.swift */; };
+		2278397E1BDA95EF00C4FC5D /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839781BDA95EF00C4FC5D /* MediaItem.swift */; };
+		2278397F1BDA95EF00C4FC5D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839791BDA95EF00C4FC5D /* Tweet.swift */; };
+		227839801BDA95EF00C4FC5D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839791BDA95EF00C4FC5D /* Tweet.swift */; };
+		227839811BDA95EF00C4FC5D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839791BDA95EF00C4FC5D /* Tweet.swift */; };
+		227839821BDA95EF00C4FC5D /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397A1BDA95EF00C4FC5D /* TwitterRequest.swift */; };
+		227839831BDA95EF00C4FC5D /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397A1BDA95EF00C4FC5D /* TwitterRequest.swift */; };
+		227839841BDA95EF00C4FC5D /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397A1BDA95EF00C4FC5D /* TwitterRequest.swift */; };
+		227839851BDA95EF00C4FC5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397B1BDA95EF00C4FC5D /* User.swift */; };
+		227839861BDA95EF00C4FC5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397B1BDA95EF00C4FC5D /* User.swift */; };
+		227839871BDA95EF00C4FC5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278397B1BDA95EF00C4FC5D /* User.swift */; };
+		22811F601BDF740F00061FED /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22811F5F1BDF740F00061FED /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +228,15 @@
 				TargetAttributes = {
 					227839411BDA923900C4FC5D = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = SC6R6MV2N8;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					227839551BDA924100C4FC5D = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -239,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2278393D1BDA923700C4FC5D /* Build configuration list for PBXProject "SketchTag" */;
+			buildConfigurationList = 2278393D1BDA923700C4FC5D /* Build configuration list for PBXProject "SketchTAG" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -448,10 +457,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SketchTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTag;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTAG;
+				PRODUCT_NAME = SketchTAG.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -459,10 +471,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SketchTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTag;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTAG;
+				PRODUCT_NAME = SketchTAG.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -473,8 +488,8 @@
 				INFOPLIST_FILE = SketchTagTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTagTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchTag.app/SketchTag";
+				PRODUCT_NAME = SketchTAG.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchTAG.temp_caseinsensitive_rename.app/SketchTAG.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -485,8 +500,8 @@
 				INFOPLIST_FILE = SketchTagTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTagTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchTag.app/SketchTag";
+				PRODUCT_NAME = SketchTAG.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchTAG.temp_caseinsensitive_rename.app/SketchTAG.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -496,7 +511,7 @@
 				INFOPLIST_FILE = SketchTagUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTagUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SketchTAG.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = SketchTag;
 				USES_XCTRUNNER = YES;
 			};
@@ -508,7 +523,7 @@
 				INFOPLIST_FILE = SketchTagUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyond2021.SketchTagUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SketchTAG.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = SketchTag;
 				USES_XCTRUNNER = YES;
 			};
@@ -517,7 +532,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2278393D1BDA923700C4FC5D /* Build configuration list for PBXProject "SketchTag" */ = {
+		2278393D1BDA923700C4FC5D /* Build configuration list for PBXProject "SketchTAG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				227839681BDA924200C4FC5D /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "227839411BDA923900C4FC5D"
-               BuildableName = "SketchTag.app"
+               BuildableName = "SketchTAG.temp_caseinsensitive_rename.app"
                BlueprintName = "SketchTag"
-               ReferencedContainer = "container:SketchTag.xcodeproj">
+               ReferencedContainer = "container:SketchTAG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "227839551BDA924100C4FC5D"
-               BuildableName = "SketchTagTests.xctest"
+               BuildableName = "SketchTAG.temp_caseinsensitive_rename.xctest"
                BlueprintName = "SketchTagTests"
-               ReferencedContainer = "container:SketchTag.xcodeproj">
+               ReferencedContainer = "container:SketchTAG.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "227839601BDA924200C4FC5D"
-               BuildableName = "SketchTagUITests.xctest"
+               BuildableName = "SketchTAG.temp_caseinsensitive_rename.xctest"
                BlueprintName = "SketchTagUITests"
-               ReferencedContainer = "container:SketchTag.xcodeproj">
+               ReferencedContainer = "container:SketchTAG.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,16 +53,16 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "227839411BDA923900C4FC5D"
-            BuildableName = "SketchTag.app"
+            BuildableName = "SketchTAG.temp_caseinsensitive_rename.app"
             BlueprintName = "SketchTag"
-            ReferencedContainer = "container:SketchTag.xcodeproj">
+            ReferencedContainer = "container:SketchTAG.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "227839411BDA923900C4FC5D"
-            BuildableName = "SketchTag.app"
+            BuildableName = "SketchTAG.temp_caseinsensitive_rename.app"
             BlueprintName = "SketchTag"
-            ReferencedContainer = "container:SketchTag.xcodeproj">
+            ReferencedContainer = "container:SketchTAG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "227839411BDA923900C4FC5D"
-            BuildableName = "SketchTag.app"
+            BuildableName = "SketchTAG.temp_caseinsensitive_rename.app"
             BlueprintName = "SketchTag"
-            ReferencedContainer = "container:SketchTag.xcodeproj">
+            ReferencedContainer = "container:SketchTAG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
