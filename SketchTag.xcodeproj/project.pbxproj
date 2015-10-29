@@ -50,17 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		227839421BDA923A00C4FC5D /* SketchTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		227839421BDA923A00C4FC5D /* SketchTAG.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchTAG.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227839451BDA923A00C4FC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		227839471BDA923A00C4FC5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2278394A1BDA923B00C4FC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2278394C1BDA923B00C4FC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2278394F1BDA923B00C4FC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227839511BDA923B00C4FC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		227839561BDA924100C4FC5D /* SketchTagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchTagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		227839561BDA924100C4FC5D /* SketchTAG.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchTAG.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2278395A1BDA924100C4FC5D /* SketchTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchTagTests.swift; sourceTree = "<group>"; };
 		2278395C1BDA924100C4FC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		227839611BDA924200C4FC5D /* SketchTagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchTagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		227839611BDA924200C4FC5D /* SketchTAG.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchTAG.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		227839651BDA924200C4FC5D /* SketchTagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchTagUITests.swift; sourceTree = "<group>"; };
 		227839671BDA924200C4FC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsTableViewController.swift; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		227839431BDA923A00C4FC5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				227839421BDA923A00C4FC5D /* SketchTag.app */,
-				227839561BDA924100C4FC5D /* SketchTagTests.xctest */,
-				227839611BDA924200C4FC5D /* SketchTagUITests.xctest */,
+				227839421BDA923A00C4FC5D /* SketchTAG.temp_caseinsensitive_rename.app */,
+				227839561BDA924100C4FC5D /* SketchTAG.temp_caseinsensitive_rename.xctest */,
+				227839611BDA924200C4FC5D /* SketchTAG.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			);
 			name = SketchTag;
 			productName = SketchTag;
-			productReference = 227839421BDA923A00C4FC5D /* SketchTag.app */;
+			productReference = 227839421BDA923A00C4FC5D /* SketchTAG.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		227839551BDA924100C4FC5D /* SketchTagTests */ = {
@@ -196,7 +196,7 @@
 			);
 			name = SketchTagTests;
 			productName = SketchTagTests;
-			productReference = 227839561BDA924100C4FC5D /* SketchTagTests.xctest */;
+			productReference = 227839561BDA924100C4FC5D /* SketchTAG.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		227839601BDA924200C4FC5D /* SketchTagUITests */ = {
@@ -214,7 +214,7 @@
 			);
 			name = SketchTagUITests;
 			productName = SketchTagUITests;
-			productReference = 227839611BDA924200C4FC5D /* SketchTagUITests.xctest */;
+			productReference = 227839611BDA924200C4FC5D /* SketchTAG.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

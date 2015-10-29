@@ -8,7 +8,7 @@
         <!--Tweets Table View Controller-->
         <scene sceneID="j5V-1r-jBX">
             <objects>
-                <tableViewController id="acx-KZ-iEv" customClass="TweetsTableViewController" customModule="SketchTag" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="acx-KZ-iEv" customClass="TweetsTableViewController" customModule="SketchTAG_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="28" sectionFooterHeight="28" id="fbJ-Pc-4A2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,10 +19,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <textInputTraits key="textInputTraits" keyboardType="twitter"/>
+                            <textInputTraits key="textInputTraits"/>
                         </textField>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweeT" rowHeight="181" id="6su-9z-URX" customClass="TweetTableViewCell" customModule="SketchTag" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweeT" rowHeight="181" id="6su-9z-URX" customClass="TweetTableViewCell" customModule="SketchTAG_temp_caseinsensitive_rename" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="122" width="600" height="181"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6su-9z-URX" id="QBf-jU-zgz">
