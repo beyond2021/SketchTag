@@ -22,15 +22,15 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweeT" rowHeight="181" id="6su-9z-URX" customClass="TweetTableViewCell" customModule="SketchTAG_temp_caseinsensitive_rename" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TweeT" rowHeight="181" id="6su-9z-URX" customClass="TweetTableViewCell" customModule="SketchTAG_temp_caseinsensitive_rename" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="122" width="600" height="181"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6su-9z-URX" id="QBf-jU-zgz">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXS-oZ-fIc">
-                                            <rect key="frame" x="64" y="8" width="528" height="20"/>
+                                            <rect key="frame" x="64" y="8" width="495" height="20"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -55,7 +55,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8eU-xG-C4d">
-                                            <rect key="frame" x="64" y="27" width="528" height="153"/>
+                                            <rect key="frame" x="64" y="27" width="495" height="153"/>
                                             <animations/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -84,6 +84,7 @@
                                     <outlet property="tweetScreenNameLabel" destination="HXS-oZ-fIc" id="s2e-aG-NPX"/>
                                     <outlet property="tweetTextView" destination="8eU-xG-C4d" id="QBw-Ia-QDO"/>
                                     <outlet property="tweetTimeLabel" destination="9yV-PS-EZN" id="vHp-iZ-ECO"/>
+                                    <segue destination="2gJ-gq-yYf" kind="show" id="Vq1-sR-vHu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -118,6 +119,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3p-A1-QmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1374" y="341"/>
+        </scene>
+        <!--Tweet Detail Controller-->
+        <scene sceneID="Q7Q-3E-UVG">
+            <objects>
+                <viewController id="2gJ-gq-yYf" customClass="TweetDetailController" customModule="SketchTAG_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RmQ-5G-Wpp"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZRd-CH-Oyd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qyu-kY-KNn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fU-RG-Yf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154" y="350"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3kz-FK-sq2">

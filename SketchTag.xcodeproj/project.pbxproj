@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2208B57C1BE689C20037E9C9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2208B57B1BE689C20037E9C9 /* Default-568h@2x.png */; };
+		2208B57E1BE697A50037E9C9 /* Apple_Swift_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2208B57D1BE697A50037E9C9 /* Apple_Swift_Logo.png */; };
+		2208B5801BE6988C0037E9C9 /* TweetDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208B57F1BE6988C0037E9C9 /* TweetDetailController.swift */; };
+		2208B5841BE69DD80037E9C9 /* bg01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2208B5811BE69DD80037E9C9 /* bg01.png */; };
+		2208B5851BE69DD80037E9C9 /* bg02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2208B5821BE69DD80037E9C9 /* bg02.png */; };
+		2208B5861BE69DD80037E9C9 /* bike_traveler.png in Resources */ = {isa = PBXBuildFile; fileRef = 2208B5831BE69DD80037E9C9 /* bike_traveler.png */; };
 		227839461BDA923A00C4FC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839451BDA923A00C4FC5D /* AppDelegate.swift */; };
 		227839481BDA923A00C4FC5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227839471BDA923A00C4FC5D /* ViewController.swift */; };
 		2278394B1BDA923B00C4FC5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227839491BDA923B00C4FC5D /* Main.storyboard */; };
@@ -52,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		2208B57B1BE689C20037E9C9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2208B57D1BE697A50037E9C9 /* Apple_Swift_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple_Swift_Logo.png; sourceTree = "<group>"; };
+		2208B57F1BE6988C0037E9C9 /* TweetDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDetailController.swift; sourceTree = "<group>"; };
+		2208B5811BE69DD80037E9C9 /* bg01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg01.png; sourceTree = "<group>"; };
+		2208B5821BE69DD80037E9C9 /* bg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg02.png; sourceTree = "<group>"; };
+		2208B5831BE69DD80037E9C9 /* bike_traveler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike_traveler.png; sourceTree = "<group>"; };
 		227839421BDA923A00C4FC5D /* SketchTAG.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchTAG.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227839451BDA923A00C4FC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		227839471BDA923A00C4FC5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,10 +132,15 @@
 		227839441BDA923A00C4FC5D /* SketchTag */ = {
 			isa = PBXGroup;
 			children = (
+				2208B5811BE69DD80037E9C9 /* bg01.png */,
+				2208B5821BE69DD80037E9C9 /* bg02.png */,
+				2208B5831BE69DD80037E9C9 /* bike_traveler.png */,
+				2208B57D1BE697A50037E9C9 /* Apple_Swift_Logo.png */,
 				227839771BDA95CB00C4FC5D /* Twitter */,
 				227839451BDA923A00C4FC5D /* AppDelegate.swift */,
 				227839471BDA923A00C4FC5D /* ViewController.swift */,
 				227839491BDA923B00C4FC5D /* Main.storyboard */,
+				2208B57F1BE6988C0037E9C9 /* TweetDetailController.swift */,
 				22811F5F1BDF740F00061FED /* TweetTableViewCell.swift */,
 				227839731BDA952F00C4FC5D /* TweetsTableViewController.swift */,
 				2278394C1BDA923B00C4FC5D /* Assets.xcassets */,
@@ -276,10 +291,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2208B5851BE69DD80037E9C9 /* bg02.png in Resources */,
 				227839501BDA923B00C4FC5D /* LaunchScreen.storyboard in Resources */,
 				2208B57C1BE689C20037E9C9 /* Default-568h@2x.png in Resources */,
+				2208B5861BE69DD80037E9C9 /* bike_traveler.png in Resources */,
+				2208B57E1BE697A50037E9C9 /* Apple_Swift_Logo.png in Resources */,
 				2278394D1BDA923B00C4FC5D /* Assets.xcassets in Resources */,
 				2278394B1BDA923B00C4FC5D /* Main.storyboard in Resources */,
+				2208B5841BE69DD80037E9C9 /* bg01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +325,7 @@
 			files = (
 				227839481BDA923A00C4FC5D /* ViewController.swift in Sources */,
 				2278397F1BDA95EF00C4FC5D /* Tweet.swift in Sources */,
+				2208B5801BE6988C0037E9C9 /* TweetDetailController.swift in Sources */,
 				2278397C1BDA95EF00C4FC5D /* MediaItem.swift in Sources */,
 				227839741BDA952F00C4FC5D /* TweetsTableViewController.swift in Sources */,
 				227839461BDA923A00C4FC5D /* AppDelegate.swift in Sources */,
